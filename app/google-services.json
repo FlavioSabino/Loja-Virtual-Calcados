@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "326461263693",
+    "project_id": "loja-virtual-bd0f2",
+    "storage_bucket": "loja-virtual-bd0f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326461263693:android:c074379768dbba49b2b104",
+        "android_client_info": {
+          "package_name": "com.flavio.lojavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326461263693-8q53ulqjqn7htv06gnfj4rd8udigjp01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flavio.lojavirtual",
+            "certificate_hash": "efc90f1b6be37559227a318e33057c1663582385"
+          }
+        },
+        {
+          "client_id": "326461263693-mj1fj5t73q9vncq5e01u9qt3h7gm3vne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzW62xke4by1jZGmMiFXNPr4e3kqVLQWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326461263693-mj1fj5t73q9vncq5e01u9qt3h7gm3vne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

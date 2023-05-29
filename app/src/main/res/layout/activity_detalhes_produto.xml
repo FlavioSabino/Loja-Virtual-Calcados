@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DetalhesProduto.DetalhesProduto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dt_fotoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/teal_300"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dt_nomeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_escolha_tomanho_calcado"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_tamanho_38"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@drawable/radio_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginEnd="10dp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_tamanho_39"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@drawable/radio_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginEnd="10dp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_tamanho_40"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@drawable/radio_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginEnd="10dp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_tamanho_41"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@drawable/radio_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginEnd="10dp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_tamanho_42"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@drawable/radio_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:layout_marginEnd="10dp"/>
+
+    </RadioGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_preco"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dt_precoproduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_finalizarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao_finalizar_pedido"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

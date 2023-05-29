@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/bg_edit_text.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/circulo_imagem_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/container_formularios.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_baseline_visibility_off_24.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_deslogar.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_email_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_foto_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_menu_lateral.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_nome_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_pedidos.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/ic_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/radio_normal.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/radio_selecionado.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/radio_selector.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/drawable/radio_text_color.xml" value="0.1" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/activity_detalhes_produto.xml" value="0.33" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/activity_form_cadastro.xml" value="0.33" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/activity_form_login.xml" value="0.33" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/activity_tela_principal_produtos.xml" value="0.15" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/dialog_carregando.xml" value="0.75" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/dialog_perfil_usuario.xml" value="0.25" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/layout/produto_item.xml" value="0.3408239700374532" />
+        <entry key="..\:/Users/curso/AndroidStudioProjects/LojaVirtual/app/src/main/res/menu/menu_principal.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
