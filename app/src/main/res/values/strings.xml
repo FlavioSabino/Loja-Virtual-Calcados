@@ -22,4 +22,10 @@
     <string name="texto_tamanho_40">40</string>
     <string name="texto_tamanho_41">41</string>
     <string name="texto_tamanho_42">42</string>
+    <string name="titulo_tela_pagamento">Preencha todos os campos antes de fazer o pagamento</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="hint_rua_numero">Rua e Número</string>
+    <string name="hint_cidade_estado">Cidade e Estado</string>
+    <string name="hint_celular">Celular</string>
+    <string name="texto_botao_fazer_pagamento">Fazer Pagamento</string>
 </resources>

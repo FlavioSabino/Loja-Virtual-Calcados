@@ -16,10 +16,12 @@
         android:theme="@style/Theme.LojaVirtual"
         tools:targetApi="31">
         <activity
+            android:name=".activities.Pagamento.Pagamento"
+            android:exported="false" />
+        <activity
             android:name=".activities.DetalhesProduto.DetalhesProduto"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activities.TelaPrincipalProdutos.TelaPrincipalProdutos"
             android:exported="false"

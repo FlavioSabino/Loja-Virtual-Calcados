@@ -45,6 +45,7 @@
         android:layout_marginTop="10dp">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/tamanho_38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_tamanho_38"
@@ -57,6 +58,7 @@
             android:layout_marginEnd="10dp"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/tamanho_39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_tamanho_39"
@@ -69,6 +71,7 @@
             android:layout_marginEnd="10dp"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/tamanho_40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_tamanho_40"
@@ -81,6 +84,7 @@
             android:layout_marginEnd="10dp"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/tamanho_41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_tamanho_41"
@@ -93,6 +97,7 @@
             android:layout_marginEnd="10dp"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/tamanho_42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_tamanho_42"
