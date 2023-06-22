@@ -2,10 +2,13 @@ package com.flavio.lojavirtual.model
 
 import android.util.Log
 import android.widget.TextView
+import com.flavio.lojavirtual.adapter.AdapterPedido
 import com.flavio.lojavirtual.adapter.AdapterProduto
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.toObject
+import java.util.*
 
 class Database {
     fun salvarDadosUsuario(nome: String){
@@ -51,6 +54,52 @@ class Database {
                     }
                 }
             }
+    }
 
+    fun salvarDadosPedidosUsuario(
+        endereco: String,
+        celular: String,
+        produto: String,
+        preco: String,
+        tamanho_calcado: String,
+        status_pagamento: String,
+        status_entrega: String
+    ){
+
+        var db = FirebaseFirestore.getInstance()
+        var usuarioID = FirebaseAuth.getInstance().currentUser!!.uid
+        var pedidoID = UUID.randomUUID().toString()
+
+        val pedidos = hashMapOf(
+            "endereco" to endereco,
+            "celular" to celular,
+            "produto" to produto,
+            "preco" to preco,
+            "tamanho_calcado" to tamanho_calcado,
+            "status_pagamento" to status_pagamento,
+            "status_entrega" to status_entrega
+        )
+
+        val documentReference = db.collection("Usuario_Pedidos").document(usuarioID)
+            .collection("Pedidos").document(pedidoID)
+        documentReference.set(pedidos).addOnSuccessListener {
+            Log.d("db_pedido","Sucesso salvar pedidos!!!!!!!!!")
+        }
+    }
+
+    fun obterListaPedidos(lista_pedidos: MutableList<Pedido>, adapter_pedidos: AdapterPedido){
+        var db = FirebaseFirestore.getInstance()
+        var usuarioID = FirebaseAuth.getInstance().currentUser!!.uid
+
+        db.collection("Usuario_Pedidos").document().collection("Pedidos")
+            .get().addOnCompleteListener { tarefa ->
+                if (tarefa.isSuccessful){
+                    for (documento in tarefa.result!!){
+                        val pedidos = documento.toObject(Pedido::class.java)
+                        lista_pedidos.add(pedidos)
+                        adapter_pedidos.notifyDataSetChanged()
+                    }
+                }
+            }
     }
 }

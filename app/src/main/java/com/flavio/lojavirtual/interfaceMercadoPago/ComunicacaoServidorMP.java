@@ -17,5 +17,5 @@ public interface ComunicacaoServidorMP {
     @POST()
     Call<JsonObject> enviarPagamento(
             @Url String url,
-            @Body JsonObject dados );
+            @Body JsonObject dados);
 }

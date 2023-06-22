@@ -9,6 +9,7 @@ import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import com.flavio.lojavirtual.R
 import com.flavio.lojavirtual.activities.FormLogin.FormLogin
+import com.flavio.lojavirtual.activities.Pedidos.Pedidos
 import com.flavio.lojavirtual.adapter.AdapterProduto
 import com.flavio.lojavirtual.databinding.ActivityTelaPrincipalProdutosBinding
 import com.flavio.lojavirtual.dialog.DialogPerfilUsuario
@@ -47,7 +48,7 @@ class TelaPrincipalProdutos : AppCompatActivity() {
 
         when(item.itemId){
             R.id.perfil -> iniciarDialogPerfilUsuario()
-            R.id.pedidos -> Log.d("p", "Pedidos")
+            R.id.pedidos -> iniciarTelaPedidos()
             R.id.deslogar -> deslogarUsuario()
         }
 
@@ -58,6 +59,11 @@ class TelaPrincipalProdutos : AppCompatActivity() {
         val dialogPerfilUsuario = DialogPerfilUsuario(this)
         dialogPerfilUsuario.iniciarPerfilUsuario()
         dialogPerfilUsuario.recuperarDadosUsuarioBanco()
+    }
+
+    private fun iniciarTelaPedidos(){
+        val intent = Intent(this,Pedidos::class.java)
+        startActivity(intent)
     }
 
     private fun deslogarUsuario(){
