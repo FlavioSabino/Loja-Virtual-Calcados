@@ -178,7 +178,7 @@ public class Pagamento extends AppCompatActivity {
         String cidade_estado = binding.editCidadeEstado.getText().toString();
         String celular = binding.editCelular.getText().toString();
 
-        String endereco = "Bairro: " + bairro + " " + " Rua e Número: " + " " + rua_numero + " " + "Cidade e estado: " + " " +cidade_estado;
+        String endereco = "Bairro: " + bairro + "\n " + "Rua e Número: " + " " + rua_numero + " \n" + "Cidade e estado: " + " " +cidade_estado;
         String status_pagamento = "Status de Pagamento: " + " " + "Pagamento Aprovado";
         String status_entrega = "Status de Entrega: " + " " + "Em andamento";
 

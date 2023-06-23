@@ -43,7 +43,7 @@
         android:layout_marginStart="20dp"/>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/txt_tamanhocalcado"
+        android:id="@+id/txt_tamanhoCalcado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="39"

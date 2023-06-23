@@ -7,5 +7,5 @@ data class Pedido(
     val preco: String? = null,
     val tamanho_calcado: String? = null,
     val status_pagamento: String? = null,
-    val status_entrega: String? = null,
+    val status_entrega: String? = null
 )

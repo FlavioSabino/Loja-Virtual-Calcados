@@ -43,7 +43,9 @@ class Database {
     }
 
     fun obterListaDeProdutos(lista_produtos: MutableList<Produto>, adapter_produto: AdapterProduto){
+
         val db = FirebaseFirestore.getInstance()
+
         db.collection("Produtos").get()
             .addOnCompleteListener { tarefa ->
                 if (tarefa.isSuccessful){
@@ -83,7 +85,7 @@ class Database {
         val documentReference = db.collection("Usuario_Pedidos").document(usuarioID)
             .collection("Pedidos").document(pedidoID)
         documentReference.set(pedidos).addOnSuccessListener {
-            Log.d("db_pedido","Sucesso salvar pedidos!!!!!!!!!")
+            Log.d("db_pedido","Sucesso ao salvar os pedidos!")
         }
     }
 
@@ -91,7 +93,7 @@ class Database {
         var db = FirebaseFirestore.getInstance()
         var usuarioID = FirebaseAuth.getInstance().currentUser!!.uid
 
-        db.collection("Usuario_Pedidos").document().collection("Pedidos")
+        db.collection("Usuario_Pedidos").document(usuarioID).collection("Pedidos")
             .get().addOnCompleteListener { tarefa ->
                 if (tarefa.isSuccessful){
                     for (documento in tarefa.result!!){
@@ -103,3 +105,4 @@ class Database {
             }
     }
 }
+

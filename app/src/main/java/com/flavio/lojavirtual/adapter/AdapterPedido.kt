@@ -34,7 +34,7 @@ class AdapterPedido(val context: Context, val lista_pedidos:MutableList<Pedido>)
         val txtCelular = binding.txtCelular
         val txtNome = binding.txtNomeProduto
         val txtPreco = binding.txtPrecoProduto
-        val txtTamanhoCalcado = binding.txtTamanhocalcado
+        val txtTamanhoCalcado = binding.txtTamanhoCalcado
         val txtStatusPagamento = binding.txtStatusPagamento
         val txtStatusEntrega = binding.txtStatusEntrega
 
