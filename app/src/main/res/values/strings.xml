@@ -28,4 +28,7 @@
     <string name="hint_cidade_estado">Cidade e Estado</string>
     <string name="hint_celular">Celular</string>
     <string name="texto_botao_fazer_pagamento">Fazer Pagamento</string>
+    <string name="texto_recuperar_senha">Recuperar sua Senha</string>
+    <string name="texto_botao_recuperar_senha">Recuperar Senha</string>
+    <string name="oauth_client">326461263693-8q53ulqjqn7htv06gnfj4rd8udigjp01.apps.googleusercontent.com</string>
 </resources>
