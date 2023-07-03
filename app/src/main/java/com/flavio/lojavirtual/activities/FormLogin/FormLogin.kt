@@ -25,13 +25,20 @@ import com.google.firebase.auth.GoogleAuthProvider
 class FormLogin : AppCompatActivity() {
 
     lateinit var binding: ActivityFormLoginBinding
-    lateinit var clienteLoginGoogle: GoogleSignInClient
+    lateinit var clienteLoginGoogle:GoogleSignInClient
      private val auth = FirebaseAuth.getInstance()
 
-    var resultadoLoginGoogle = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
-        val tarefa = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-        val conta = tarefa.getResult(ApiException::class.java)
-        autenticarUsuarioGoogle(conta.idToken!!)
+    val dialogCarregando = DialogCarregando(this)
+
+    private val resultadoDoLoginGoogle = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
+
+        if (result.resultCode == requestedOrientation){
+            val tarefa = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+            val conta = tarefa.getResult(ApiException::class.java)
+            autenticarUsuarioGoogle(conta.idToken!!)
+        }
+
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +49,7 @@ class FormLogin : AppCompatActivity() {
         googleSignInOption()
 
         supportActionBar!!.hide()
-        val dialogCarregando = DialogCarregando(this)
+
 
         binding.btEntrar.setOnClickListener { view ->
 
@@ -104,18 +111,22 @@ class FormLogin : AppCompatActivity() {
 
     private fun loginGoogle(){
         val intentEntrar = clienteLoginGoogle.signInIntent
-        resultadoLoginGoogle.launch(intentEntrar)
+        resultadoDoLoginGoogle.launch(intentEntrar)
     }
 
     private fun autenticarUsuarioGoogle(idToken: String){
 
         val credencial = GoogleAuthProvider.getCredential(idToken,null)
         auth.signInWithCredential(credencial).addOnCompleteListener { autenticacao ->
-            if (autenticacao.isSuccessful) {
-               irParaTelaProdutos()
-                }
+            if (autenticacao.isSuccessful){
+                dialogCarregando.iniciarCarregamentoAlertDialog()
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val intent = Intent(this, TelaPrincipalProdutos::class.java)
+                    startActivity(intent)
+                    dialogCarregando.liberarAlertDialog()
+                },3000)
         }
-    }
+    }}
 
     private fun irParaTelaProdutos(){
         val intent = Intent(this, TelaPrincipalProdutos::class.java)
