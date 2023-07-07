@@ -3,12 +3,11 @@ package com.flavio.lojavirtual.activities.TelaPrincipalProdutos
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import com.flavio.lojavirtual.R
-import com.flavio.lojavirtual.activities.FormLogin.FormLogin
+import com.flavio.lojavirtual.activities.formlogin.FormLogin
 import com.flavio.lojavirtual.activities.Pedidos.Pedidos
 import com.flavio.lojavirtual.adapter.AdapterProduto
 import com.flavio.lojavirtual.databinding.ActivityTelaPrincipalProdutosBinding

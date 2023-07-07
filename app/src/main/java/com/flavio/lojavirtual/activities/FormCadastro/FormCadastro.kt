@@ -1,12 +1,10 @@
 package com.flavio.lojavirtual.activities.FormCadastro
 
-import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.flavio.lojavirtual.R
-import com.flavio.lojavirtual.activities.FormLogin.FormLogin
 import com.flavio.lojavirtual.databinding.ActivityFormCadastroBinding
 import com.flavio.lojavirtual.model.Database
 import com.google.android.material.snackbar.Snackbar
